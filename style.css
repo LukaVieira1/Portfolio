@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.center{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    text-align: center;
+    flex-wrap: wrap;
+    
+}
+
+}
+header{
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+
+.myport{
+    color: #16507b;
+    padding: 20px 20px;  
+}
+
+.myport h2{
+    font-size: 40px;
+}
+
+.main_profile img {
+    border-radius: 50%;
+    border: px solid var(--color-green);
+    margin-top: 5px;
+    height: 300px;
+    width: 300px;
+}
+
+.main_profile h2{
+    margin-top: 15px;
+    color: #16507b;
+    font-size: 20px;
+}
+
+/*
+Section Main
+*/
+
+section.main{
+    background-image: url('BG.jpg');
+    padding: 70px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.social{
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-single{
+    border-radius: 10px;
+    background-color: white;
+    width: 20%;
+    margin-right: 1%;
+    margin-left: 10%;
+    margin-top: 50px;
+    padding:20px 20px;
+    text-align: center;
+    box-shadow: 0 0 29px 0 rgba(19, 1, 1, 0.5);
+    overflow: hidden;
+    
+}
+
+
+.social-single p{
+    font-weight: bold;
+    color: gray;
+    font-size: 18px;
+    text-align: left;
+    line-height: 25px;
+    margin-top: 2%;
+}
+
+.social-single i{
+    transition: all 0.3s ease-in-out;
+    line-height: 1;
+}
+
+.social-single i1{
+    color: gray;
+    font-size: 70px;
+}
+
+.social-single i2{
+    color: gray;
+    font-size: 70px; 
+}
+
+.social-single i3{
+    color: gray;
+    font-size: 70px;
+}
+
+.social-single:hover{
+    transform: scale(1.08);
+  }
+
+  .social-single:hover p{
+      font-weight: bold;
+      color: black;
+  }
+
+.social-single:hover i1{
+    color: red;
+}
+
+.social-single:hover i2{
+    color: blue;
+}
+
+.social-single:hover i3{
+    color: black;
+}
+
+section.sobre{
+    padding: 80px 0;
+}
+
+.chamada-sobre{
+    width: 100%;
+    text-align: center;
+}
+
+.chamada-sobre h2{
+    color: #16507b;
+    text-transform: uppercase;
+}
+
+.conteudo-sobre{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudo-sobre p{
+    width: 48%;
+    margin-right: 2%;
+    margin-top: 2%;
+    font-size: 14px;
+    font-weight: bold;
+    color: gray;
+    text-align: left;
+     
+}
+
+.conteudo-sobre span{
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.conteudo-sobre i1{
+    color: green;
+}
+
+.conteudo-sobre i2{
+    color: red;
+}
+
+@media screen and (max-width: 768px){
+    .social-single{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .conteudo-sobre p{width: 100%; margin: 20px;}
+}
