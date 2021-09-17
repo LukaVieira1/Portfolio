@@ -49,7 +49,7 @@ Section Main
 */
 
 section.main{
-    background-image: url('/img/BG.jpg');
+    background-image: url('BG.jpg');
     padding: 70px 0;
     background-position: center;
     background-size: cover;
