@@ -11,10 +11,9 @@
     padding: 0 2%;
     text-align: center;
     flex-wrap: wrap;
-    
 }
 
-}
+
 header{
     background-color: white;
     padding: 20px 0;
@@ -59,23 +58,32 @@ section.main{
 }
 
 .social{
-    display: flex;
-    flex-wrap: wrap;
-    transition: all 0.3s ease-in-out;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 30px;
+    place-items: center;
+    padding: 0 20px;
+    /* flex-wrap: wrap; */
+    transition: all 0.3s ease-in-out; 
+}
+
+.social a{
+    text-decoration: none;
 }
 
 .social-single{
     border-radius: 10px;
     background-color: white;
-    width: 20%;
-    margin-right: 1%;
-    margin-left: 10%;
-    margin-top: 50px;
+    width: 300px;
+    min-height: 200px; 
+    /* margin-right: 1%;
+    margin-left: 10%;*/
+    margin-top: 50px; 
     padding:20px 20px;
     text-align: center;
     box-shadow: 0 0 29px 0 rgba(19, 1, 1, 0.5);
     overflow: hidden;
-    
+    transition: transform 0.2s linear;
 }
 
 
@@ -109,13 +117,13 @@ section.main{
 }
 
 .social-single:hover{
-    transform: scale(1.08);
-  }
+    transform: scale(1.08);   
+}
 
-  .social-single:hover p{
+.social-single:hover p{
       font-weight: bold;
       color: black;
-  }
+}
 
 .social-single:hover i1{
     color: red;
@@ -172,6 +180,68 @@ section.sobre{
 .conteudo-sobre i2{
     color: red;
 }
+
+section.sobre-job{
+    padding: 40px 0;
+}
+
+.exp{
+    margin-bottom: 60px;
+}
+
+.exp h1{
+    color: #16507b;
+    text-align: center;
+}
+
+.job-atual-img{
+    width: 100%;
+}
+
+.job-atual-img img{max-width: 100%;}
+
+.sobre-job{
+    padding: 0 50px;
+    width: 50%;
+    
+}
+
+.sobre-job h2{
+    margin-top: 60px;
+    color: #681d86;
+    margin-bottom: 20px;
+}
+
+.sobre-job p{
+    font-weight: bold;
+    color: #444;
+    font-size: 14px;
+    margin-bottom: 14px;
+    margin-top: 100px;
+    
+}
+
+.exp-old{
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+.exp-old h1{
+    color: #16507b;
+    text-align: center;
+}
+
+.jobs-single img{
+    filter: grayscale(100);
+    transform:scale(1,1);
+    transition: 1s;
+}
+
+.jobs-single img:hover{
+    transform:scale(1.1,1.1);
+    filter:grayscale(0)
+}
+
 
 @media screen and (max-width: 768px){
     .social-single{
