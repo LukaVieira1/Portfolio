@@ -11,7 +11,6 @@
     padding: 0 2%;
     text-align: center;
     flex-wrap: wrap;
-    
 }
 
 
@@ -50,7 +49,7 @@ Section Main
 */
 
 section.main{
-    background-image: url('BG.jpg');
+    background-image: url('/img/BG.jpg');
     padding: 70px 0;
     background-position: center;
     background-size: cover;
@@ -181,6 +180,68 @@ section.sobre{
 .conteudo-sobre i2{
     color: red;
 }
+
+section.sobre-job{
+    padding: 40px 0;
+}
+
+.exp{
+    margin-bottom: 60px;
+}
+
+.exp h1{
+    color: #16507b;
+    text-align: center;
+}
+
+.job-atual-img{
+    width: 100%;
+}
+
+.job-atual-img img{max-width: 100%;}
+
+.sobre-job{
+    padding: 0 50px;
+    width: 50%;
+    
+}
+
+.sobre-job h2{
+    margin-top: 60px;
+    color: #681d86;
+    margin-bottom: 20px;
+}
+
+.sobre-job p{
+    font-weight: bold;
+    color: #444;
+    font-size: 14px;
+    margin-bottom: 14px;
+    margin-top: 100px;
+    
+}
+
+.exp-old{
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+.exp-old h1{
+    color: #16507b;
+    text-align: center;
+}
+
+.jobs-single img{
+    filter: grayscale(100);
+    transform:scale(1,1);
+    transition: 1s;
+}
+
+.jobs-single img:hover{
+    transform:scale(1.1,1.1);
+    filter:grayscale(0)
+}
+
 
 @media screen and (max-width: 768px){
     .social-single{
